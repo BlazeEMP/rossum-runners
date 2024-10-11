@@ -1,0 +1,107 @@
+/*
+  Blog Styles
+*/
+
+/*
+  Tags
+*/
+a {
+  text-decoration: none;
+}
+
+article {
+  flex: 1 1 50%;
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 1rem;
+  position: relative;
+}
+
+article blockquote {
+  margin: 1rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+article h2 {
+  text-transform: capitalize;
+  border-bottom: thin solid;
+}
+
+article p {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.5rem;
+  opacity: .75;
+}
+
+footer {
+  position: fixed;
+  inset: 0;
+  top: calc(100% - 5rem);
+}
+
+li {
+  margin: 1rem;
+}
+
+main {
+  flex-direction: column;
+  gap: 1em;
+  padding: 1rem;
+  height: calc(100vh - 11rem);
+  overflow-y: scroll;
+  justify-content: flex-start;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  Classes
+*/
+.card {
+  flex: 1 1 50%;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.dark a {
+  color: var(--light);
+}
+
+.light footer {
+  border-top: double 1rem;
+}
+
+.light a {
+  color: var(--dark);
+}
+
+/*
+  IDs
+*/
+#back {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  border: groove black;
+  background-color: var(--dark-accent);
+  color: var(--light);
+}
+
+
+#back:active {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+  background-color: var(--dark-accent);
+}
+
+#back:hover {
+  border-style: inset;
+  background-color: var(--dark-accent-action);
+}
+
+#love {
+  text-align: center;
+}
