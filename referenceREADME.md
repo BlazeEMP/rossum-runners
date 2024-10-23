@@ -78,13 +78,13 @@ This project is graded based on the following criteria:
 
 * Satisfies the following code requirements:
 
-  * Application uses client-side storage to store persistent data.
+    * Application uses client-side storage to store persistent data.
 
-  * Application uses a CSS framework.
+    * Application uses a CSS framework.
 
-  * Application must include at least one modal instead of native browser alert, confirm, or prompt functionality. Look into the CSS framework's documentation for more information!
+    * Application must include at least one modal instead of native browser alert, confirm, or prompt functionality. Look into the CSS framework's documentation for more information!
 
-  * Application is interactive (accepts and responds to user input).
+    * Application is interactive (accepts and responds to user input).
 
 ### Concept 10%
 
