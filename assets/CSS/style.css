@@ -1,0 +1,13 @@
+header {
+    background-color: gray;
+    z-index: 1;
+}
+
+main {
+    margin-top: 135px;
+}
+
+.card {
+    width: 95%;
+    margin: auto;
+}
