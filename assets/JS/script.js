@@ -2,6 +2,17 @@ let loadedReview = {};
 const main = document.body.main;
 
 function renderPage() {
+    // append these inside main
+    // <div class="card mb-4">
+    //     <div class="card-header">
+    //         Movie Title
+    //     </div>
+    //     <div class="card-body">
+    //         <h5 class="card-title">Username</h5>
+    //         <p class="card-text">Rating: out of 5</p>
+    //        <p class="card-text"> User Review</p>
+    //     </div>
+    // </div>
     let allReviews = readLocalStorage();
     for (review of allReviews) {
         username = review.username;
