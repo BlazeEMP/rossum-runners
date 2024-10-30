@@ -9,6 +9,7 @@ function renderPage() {
         rating = review.rating;
         content = review.content;
         console.log(review);
+        
     }
     console.log(allReviews);
 }
