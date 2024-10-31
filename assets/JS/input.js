@@ -73,6 +73,6 @@ userForm.addEventListener('submit', submitForm);
 let redirectURL = '';
 
 const redirectPage = function (url) {
-  redirectURL = url;
-  location.assign(url);
+    redirectURL = url;
+    location.assign(url);
 };
