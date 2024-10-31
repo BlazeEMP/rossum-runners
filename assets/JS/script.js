@@ -1,5 +1,5 @@
 let loadedReview = {};
-const main = document.body.main;
+const reviewSection = document.body.querySelector(".container");
 
 function renderPage() {
     // append these inside main
@@ -20,7 +20,16 @@ function renderPage() {
         rating = review.rating;
         content = review.content;
         console.log(review);
-        
+
+        // create outer card
+        var card = document.createElement('div');
+        card.classList.add('card', 'mb-4');
+
+        // create header for card with movie title
+        var cardTitle = document.createElement('div');
+        cardTitle.classList.add('card-header');
+        cardTitle.textContent = `hey ${review.title}`;
+        reviewSection.appendChild(cardTitle);
     }
     console.log(allReviews);
 }
