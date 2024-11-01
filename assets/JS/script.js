@@ -1,5 +1,6 @@
 let loadedReview = {};
 const reviewSection = document.body.querySelector(".container");
+const bodySection = document.body;
 
 function renderPage() {
     // append these inside main
@@ -14,6 +15,7 @@ function renderPage() {
     //     </div>
     // </div>
     let allReviews = readLocalStorage();
+
     for (review of allReviews) {
         username = review.username;
         title = review.title;
@@ -23,7 +25,7 @@ function renderPage() {
 
         // 1.) create outer card
         var reviewCard = document.createElement('div');
-        reviewCard.classList.add('card', 'mb-4', 'reviews');
+        reviewCard.classList.add('card', 'mb-4');
 
         // 2.) create header for card with movie title
         var cardTitle = document.createElement('h4');
@@ -60,6 +62,9 @@ function renderPage() {
         // append built review div to body main review area
         reviewSection.appendChild(reviewCard);
     }
+    bodySection.style.paddingBottom = '30px';
+
+
     console.log(allReviews);
 }
 

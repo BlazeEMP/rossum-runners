@@ -12,15 +12,15 @@ Finally, a project requires a presentation, because you’re trying to convince 
 
 You and your group will use everything you’ve learned over the past four modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
 
-* Be deployed to GitHub Pages.
+* X Be deployed to GitHub Pages.
 
-* Be interactive (i.e., accept and respond to user input).
+* X Be interactive (i.e., accept and respond to user input).
 
-* Use a CSS framework (see suggestions).
+* X Use a CSS framework (see suggestions).
 
 * Include at least one modal instead of native browser alert, confirm, or prompt functionality. Look into the CSS framework's documentation for more information!
 
-* Use client-side storage to store persistent data.
+* X Use client-side storage to store persistent data.
 
 * Be responsive.
 
