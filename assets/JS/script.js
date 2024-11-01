@@ -21,15 +21,44 @@ function renderPage() {
         content = review.content;
         console.log(review);
 
-        // create outer card
-        var card = document.createElement('div');
-        card.classList.add('card', 'mb-4');
+        // 1.) create outer card
+        var reviewCard = document.createElement('div');
+        reviewCard.classList.add('card', 'mb-4', 'reviews');
 
-        // create header for card with movie title
-        var cardTitle = document.createElement('div');
+        // 2.) create header for card with movie title
+        var cardTitle = document.createElement('h4');
         cardTitle.classList.add('card-header');
-        cardTitle.textContent = `hey ${review.title}`;
-        reviewSection.appendChild(cardTitle);
+        cardTitle.textContent = `Movie: ${review.title}`;
+
+        // 2.) create body of review and append its children (username, rating, content)
+        var cardBody = document.createElement('div');
+        cardBody.classList.add('card-body');
+
+        // 3.) create username h5 to go in card body
+        var usernameSpot = document.createElement('h5');
+        usernameSpot.classList.add('card-title');
+        usernameSpot.textContent = `User: ${review.username}`;
+
+        // 3.) create section to display review rating
+        var ratingSpot = document.createElement('p');
+        ratingSpot.classList.add('card-text');
+        ratingSpot.textContent = `${review.rating}/5`;
+
+        // 3.) create section containing all text from review
+        var contentSpot = document.createElement('p');
+        contentSpot.classList.add('card-text');
+        contentSpot.textContent = `${review.content}`;
+
+        // build divs from inside out and then move to append whole card
+        cardBody.appendChild(usernameSpot);
+        cardBody.appendChild(ratingSpot);
+        cardBody.appendChild(contentSpot);
+
+        reviewCard.appendChild(cardTitle);
+        reviewCard.appendChild(cardBody);
+
+        // append built review div to body main review area
+        reviewSection.appendChild(reviewCard);
     }
     console.log(allReviews);
 }
