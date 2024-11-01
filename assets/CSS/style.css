@@ -1,16 +1,58 @@
 header {
-    background-color: gray;
+    background-color: #dcebe6;
     z-index: 1;
 }
 
+/*h1 { 
+    
+
+}*/
 main {
     margin-top: 135px;
+}
+
+body {
+    background-color: #629584;
 }
 
 .card {
     width: 95%;
     margin: auto;
+    background-color: #dcebe6;
 }
+
+.card-header {
+    background-color: #387478;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #243642;
+    color: #E2F1E7
+}
+
+form {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 15%;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #387478;
+    padding: 5px;
+    margin: 10px;
+}
+
+.btn:hover {background-color: #243642;}
+
+reviews:last-of-type {
+    margin: 50px;
+}
+
 
 @media (min-width: 768px) {}
 
