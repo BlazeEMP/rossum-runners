@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #dcebe6;
+}
 html {
     height: 100%;
 }
