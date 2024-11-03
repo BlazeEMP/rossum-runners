@@ -3,10 +3,10 @@ header {
     z-index: 1;
 }
 
-/*h1 { 
-    
+nav a {
+    font-weight: bold;
+}
 
-}*/
 main {
     margin-top: 135px;
 }
@@ -37,14 +37,15 @@ footer {
 form {
     display: inline-block;
     padding: 15px;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     box-sizing: border-box;
 }
 
 .btn {
     background-color: #387478;
-    padding: 5px;
-    margin: 10px;
+    padding: 6px;
+    margin: 8px;
+    color: #E2F1E7;
 }
 
 .btn:hover {background-color: #243642;}
@@ -54,6 +55,11 @@ reviews:last-of-type {
 }
 
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    /*body,
+    nav {
+        flex-direction: column;
+    }*/
+}
 
 @media (min-width: 992px) {}
