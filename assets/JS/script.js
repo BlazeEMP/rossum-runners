@@ -88,17 +88,6 @@ function readLocalStorage() {
     }
 }
 
-// object used for loading new data and pushing into review lists, if order of files changes may want to include in input.js
-let tempStorageObject = {};
-
-function storeLocalStorage(newObject) {
-    tempStorageObject = newObject;
-    let fetchedReviews = readLocalStorage();
-    fetchedReviews.push(newObject);
-    console.log(fetchedReviews);
-    localStorage.setItem('reviewData', JSON.stringify(fetchedReviews));
-}
-
 let redirectURL = '';
 
 const redirectPage = function (url) {
