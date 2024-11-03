@@ -53,6 +53,15 @@ reviews:last-of-type {
     margin: 50px;
 }
 
+/* add class for default image*/
+.default-image {
+    width: 50rem;
+    height: 50rem;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
 
 @media (min-width: 768px) {}
 
