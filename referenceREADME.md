@@ -100,15 +100,15 @@ This project is graded based on the following criteria:
 
 ### Repository Quality: 10%
 
-* Repository has a unique name.
+* X Repository has a unique name.
 
 * Repository follows best practices for file structure and naming conventions.
 
 * Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+* X Repository contains multiple descriptive commit messages.
 
-* Repository contains a quality README file with description, screenshot, and link to deployed application.
+* X Repository contains a quality README file with description, screenshot, and link to deployed application.
 
 ### Application Quality: 15%
 
@@ -120,11 +120,11 @@ This project is graded based on the following criteria:
 
 ### Presentation 10%
 
-* Your group should present using a slide deck.
+* X Your group should present using a slide deck.
 
-* Every group member should speak during the presentation.
+* X Every group member should speak during the presentation.
 
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
+* X Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
 
 ### Collaboration 10%
 
