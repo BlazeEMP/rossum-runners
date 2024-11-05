@@ -4,6 +4,8 @@ const title = document.getElementById('title');
 const rating = document.getElementById('rating');
 const content = document.getElementById('content');
 
+let writingReview = {};
+
 var formData = {
     username: 'void',
     title: 'void',
@@ -33,9 +35,9 @@ function submitForm(event) {
 
             // if rating is between and including 0-5 store and clear form data
             if (ratingNumber >= 0.0 && ratingNumber <= 5.0) {
-                storeLocalStorage(formData);
-                clearFormData();
-                switchPage();
+                    writingReview = formData;
+                    clearFormData();
+                    switchPage();
             } else {
                 alert("please only use a number 1- 5 for the rating");
             }
@@ -45,16 +47,20 @@ function submitForm(event) {
 }
 
 function switchPage() {
-    let answer = confirm("Confirm to switch to viewing reviews, hit cancel if you'd like to stay here and submit more.")
-    if (answer) {
-        location.assign('../../index.html');
-    } else {
-        username.value = '';
-        title.value = '';
-        rating.value = '';
-        content.value = '';
-        return;
-    }
+    var myModal = document.getElementById('myModal'); 
+
+    // Create a Bootstrap modal instance 
+    var modal = new bootstrap.Modal(myModal); 
+    
+    // Show the modal 
+    modal.show();
+    var saveButton = document.querySelector('#saveReview');
+    saveButton.addEventListener('click', confirm);
+}
+
+function confirm() {
+    storeLocalStorage(writingReview);
+    location.assign('../../index.html');
 }
 
 function clearFormData() {
@@ -73,19 +79,16 @@ function storeLocalStorage(newObject) {
     tempStorageObject = newObject;
     let fetchedReviews = readLocalStorage();
     fetchedReviews.push(newObject);
-    console.log(fetchedReviews);
     localStorage.setItem('reviewData', JSON.stringify(fetchedReviews));
 }
 
 function readLocalStorage() {
     let array = [];
     const storedPosts = JSON.parse(localStorage.getItem('reviewData'));
-    // console.log(storedPosts);
+
     if (storedPosts == null) {
         return array;
-        // console.log(array);
-    }
-    else {
+    } else {
         array = storedPosts;
         return array;
     }

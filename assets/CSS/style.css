@@ -59,15 +59,15 @@ reviews:last-of-type {
     height: 50rem;
 }
 
-@media (min-width: 768px) {}
-
-@media (min-width: 992px) {}
-
-@media (min-width: 768px) {
-    /*body,
-    nav {
-        flex-direction: column;
-    }*/
+.flexy {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-@media (min-width: 992px) {}
+.imgsubmit {
+    margin: 20px;
+    width: 60%;
+    height: 40%;
+    object-fit: cover;
+}
