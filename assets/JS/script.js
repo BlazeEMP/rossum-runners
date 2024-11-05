@@ -3,31 +3,27 @@ const reviewSection = document.body.querySelector(".container");
 const bodySection = document.body;
 
 function renderPage() {
-    // append these inside main
+    // append this structure for reviews inside main
     // <div class="card mb-4">
-    //     <div class="card-header">
+    //     <h4 class="card-header">
     //         Movie Title
-    //     </div>
+    //     </h4>
     //     <div class="card-body">
     //         <h5 class="card-title">Username</h5>
     //         <p class="card-text">Rating: out of 5</p>
-    //        <p class="card-text"> User Review</p>
+    //         <p class="card-text"> User Review</p>
     //     </div>
     // </div>
-    // defaultindex.html
     let allReviews = readLocalStorage();
 
-    console.log(allReviews.length);
     if (allReviews.length == 0) {
         redirectPage("defaultindex.html");
-        console.log(allReviews);
     } else {
         for (review of allReviews) {
             username = review.username;
             title = review.title;
             rating = review.rating;
             content = review.content;
-            console.log(review);
 
             // 1.) create outer card
             var reviewCard = document.createElement('div');
@@ -70,19 +66,14 @@ function renderPage() {
         }
         bodySection.style.paddingBottom = '30px';
     }
-
-    console.log(allReviews);
 }
 
 function readLocalStorage() {
     let array = [];
     const storedPosts = JSON.parse(localStorage.getItem('reviewData'));
-    // console.log(storedPosts);
     if (storedPosts == null) {
         return array;
-        // console.log(array);
-    }
-    else {
+    } else {
         array = storedPosts;
         return array;
     }
