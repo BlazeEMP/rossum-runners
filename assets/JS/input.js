@@ -56,16 +56,6 @@ function switchPage() {
     modal.show();
     var saveButton = document.querySelector('#saveReview');
     saveButton.addEventListener('click', confirm);
-
-    //if (answer) {
-    //    location.assign('../../index.html');
-    //} else {
-    //    username.value = '';
-    //    title.value = '';
-    //    rating.value = '';
-    //    content.value = '';
-    //    return;
-    //}
 }
 
 function confirm() {
